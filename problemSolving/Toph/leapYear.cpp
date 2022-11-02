@@ -16,7 +16,7 @@ if(checkYear(n)){
     cout<<"Yes"<<endl;
 }
 else{
-    cout<<"NO"<<endl;
+    cout<<"No"<<endl;
 }
 return 0;
 }

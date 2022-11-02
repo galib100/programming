@@ -11,12 +11,12 @@ int main(){
 
      ms.insert(4);
      ms.insert(4);
-     ms.insert(4);
+     ms.insert(7);
      ms.insert(4);
      ms.insert(3);
-
+//    ms.erase(7);
      for( it=ms.begin(); it!=ms.end(); ++it){
          cout<<*it<<endl;
      }
-     
+
 }

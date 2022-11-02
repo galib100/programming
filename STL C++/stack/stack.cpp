@@ -20,10 +20,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-   
+
    stack<string>s;
 //    stack dosn't have an iterator !important
    s.push("galib");
+   s.push("banna");
    s.push("banna");
    s.push("monira");
    while(!s.empty()){
@@ -32,6 +33,6 @@ int main(){
 cout<<x<<endl;
  s.pop();
    }
-  
-   
+
+
 }

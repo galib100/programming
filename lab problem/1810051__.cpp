@@ -1,5 +1,4 @@
 
-///here_the lab_problem__
 ///name:_Md_Musanna_Galib__
 ///Roll:__1810051
 #include<bits/stdc++.h>

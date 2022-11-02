@@ -1,0 +1,59 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define fr first
+#define sc second
+#define f(i,n) for(int i=0;i<n;++i)
+
+#define fastio                   \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);
+#define nl "\n"
+void solve()
+{
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        int n,k;
+        cin>>n>>k;
+        int arr[1000];
+        int usArr[1000];
+//        vector<int>vec;
+        for(int i=1; i<=n; ++i)
+        {
+
+            cin>>arr[i];
+            usArr[i]=arr[i];
+
+        }
+        sort(arr,arr+n+1);
+        int c=0;
+        if(n==k){
+            cout<<0<<nl;
+        }
+        for(int i=1; i<=k; ++i)
+        {
+            if(arr[i]!=usArr[i])
+            {
+                c++;
+            }
+        }
+        cout<<c<<nl;
+
+    }
+
+}
+
+
+int main()
+{
+    fastio;
+
+
+
+    solve();
+    return 0;
+}
+
+

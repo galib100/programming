@@ -9,7 +9,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int a[5]= {2,35,6,23,10};
+    int a[6]= {2,2,35,6,23,10};
     list<int>mylist(a,a+5);
     list<int>::iterator it;
     // mylist.sort();
