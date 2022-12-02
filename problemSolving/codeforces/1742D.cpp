@@ -34,6 +34,7 @@ void solve()
                 if(coprime(arr[i],arr[j])){
                     if(big< i+j){
                         big =i+j;
+                        break;
                     }else{
                         break;
                     }
