@@ -1,7 +1,7 @@
 //https://codeforces.com/problemset/problem/1741/C
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
+#define ll long long
 #define fr first
 #define sc second
 #define f(i,n) for(int i=0;i<n;++i)
@@ -18,27 +18,46 @@ void solve()
     {
         int n;
         cin>>n;
-        int arr[n+10];
-        ll sum =0;
+        ll arr[n+10];
+        ll tSum =0;
         f(i,n){
             cin>>arr[i];
-            sum+= arr[i];
+            tSum+= arr[i];
         }
-        int c=0;
-        int sm=0;
-        cout<<sum<<nl;
-        int mx = *max_element(arr,arr+n);
-        cout<<mx<<nl;
-        n=n-1;
-        sm =sum-mx;
-        if(n%2!=0){
-            if(sum%sm==0){
-                cout<< sm/mx +1<<nl;
-            }
-        }else{
-            cout<<sm/mx <<nl;
-        }
-
+         
+        ll sum=0;
+        ll ideal =0;
+        
+    	f(i,n){
+    		sum+=arr[i];
+    		ll tempSum=sum;
+    		for(int j=i+1;j<n-1;++j){
+    			
+				if(tSum%tempSum==0){
+					
+					ideal =tempSum;
+					 // cout<<ideal<<nl;
+					break;
+					//
+				}else tempSum+=arr[j];
+    		}
+    	}
+    	ll ansSum=0;
+    	int ans =0;
+    	int c=0;
+    	f(i,n){
+    		ansSum+=arr[i];
+    		c++;
+    		if(ansSum==ideal){
+    			 ans=max(ans,c);
+    			 c=0;ansSum=0;
+    		}
+    		
+    	}
+    	cout<<ideal<<nl;
+    	if(ideal!=0)cout<<ans<<nl;
+    	else cout<<n<<nl;  
+	
     }
 
 }
