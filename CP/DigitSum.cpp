@@ -21,5 +21,5 @@ int arr[100];
 
     cout<<digitSum( arr,n-1);
     cout<<endl;
-
+	cout<<"galib"<<endl;
 }
