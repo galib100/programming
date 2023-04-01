@@ -16,13 +16,22 @@ using namespace std;
 const int N=10e7+10;
 void solve()
 {
-    ll t;
-    cin>>t;
-    while(t--)
-    {
-
-    }
-
+     
+     ll s;
+     cin>>s;
+     // cout<<typeid(s).name()<<nl;
+     string ss=to_string(s);
+     // cout<<typeid(ss).name()<<nl;
+     // string s1="2";
+     char a='1';
+     cout<<(int)a<<nl;
+     char b='3';
+     
+     cout<<(int)b-(int)a<<nl;
+     // cout<<s1[0]+0<<nl;
+     // cout<<ss[0]+10<<nl;
+     // cout<<typeid(ss).name()<<nl;
+     
 }
 
 

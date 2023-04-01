@@ -1,3 +1,11 @@
+// Problem: Construct String
+// Contest: CodeChef - START83D
+// URL: https://www.codechef.com/START83D/problems/CONSTR
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// Time:2023-03-29 22:17:43
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -20,7 +28,18 @@ void solve()
     cin>>t;
     while(t--)
     {
-
+		string ss;
+		int n;
+		cin>>n;
+		cin>>ss;
+		set<char>st;
+		
+		f(i,n){
+			st.insert(ss[i]);
+		}
+		for(auto i:st)cout<<i;
+		
+		cout<<nl;
     }
 
 }

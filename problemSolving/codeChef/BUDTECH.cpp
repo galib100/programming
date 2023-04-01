@@ -1,3 +1,11 @@
+// Problem: Budget of Technex
+// Contest: CodeChef - START83D
+// URL: https://www.codechef.com/START83D/problems/BUDTECH
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// Time:2023-03-29 22:04:20
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -20,7 +28,9 @@ void solve()
     cin>>t;
     while(t--)
     {
-
+		ll n;
+		cin>>n;
+		cout<<n*100<<nl;
     }
 
 }

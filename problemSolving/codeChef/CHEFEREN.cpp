@@ -1,3 +1,11 @@
+// Problem: Chef Eren
+// Contest: CodeChef - START83D
+// URL: https://www.codechef.com/START83D/problems/CHEFEREN
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// Time:2023-03-29 22:09:32
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -20,7 +28,13 @@ void solve()
     cin>>t;
     while(t--)
     {
-
+		ll n,a,b;
+		cin>>n>>a>>b;
+		if(n%2==0){
+			cout<<(n/2)*a+(n/2)*b<<nl;
+		}else{
+			cout<<(n/2)*a+((n/2)+1)*b<<nl;
+		}
     }
 
 }

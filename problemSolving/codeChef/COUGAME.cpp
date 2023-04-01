@@ -1,3 +1,11 @@
+// Problem: Couple Game
+// Contest: CodeChef - START83D
+// URL: https://www.codechef.com/START83D/problems/COUGAME
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// Time:2023-03-29 21:59:46
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -19,7 +27,10 @@ void solve()
     ll t;
     cin>>t;
     while(t--)
-    {
+    {	
+    	ll b,g;
+    	cin>>b>>g;
+    	cout<<abs(b-g)<<nl;
 
     }
 
